@@ -8,12 +8,12 @@ import { site } from "@/lib/site";
 const initial: FormState = { status: "idle" };
 
 const inputCls =
-  "h-12 w-full rounded-full border border-line bg-bg px-5 text-[15px] text-ink placeholder:text-muted transition-colors focus:border-accent focus:outline-none aria-[invalid=true]:border-red-700 dark:aria-[invalid=true]:border-red-400";
+  "h-12 w-full rounded-full border border-line bg-bg px-5 text-[15px] text-ink placeholder:text-muted transition-colors focus:border-accent focus:outline-none aria-[invalid=true]:border-red-400";
 
 function FieldError({ id, msg }: { id: string; msg?: string }) {
   if (!msg) return null;
   return (
-    <p id={id} className="text-[13px] text-red-700 dark:text-red-400">
+    <p id={id} className="text-[13px] text-red-400">
       {msg}
     </p>
   );
@@ -152,12 +152,12 @@ export function ContactForm() {
           defaultValue={v.message}
           aria-invalid={e.message ? true : undefined}
           aria-describedby="c-message-err"
-          className="w-full rounded-2xl border border-line bg-bg px-5 py-4 text-[15px] text-ink transition-colors focus:border-accent focus:outline-none aria-[invalid=true]:border-red-700 dark:aria-[invalid=true]:border-red-400"
+          className="w-full rounded-2xl border border-line bg-bg px-5 py-4 text-[15px] text-ink transition-colors focus:border-accent focus:outline-none aria-[invalid=true]:border-red-400"
         />
         <FieldError id="c-message-err" msg={e.message} />
       </div>
       {state.message && (
-        <p role="alert" className="text-[14px] text-red-700 dark:text-red-400">
+        <p role="alert" className="text-[14px] text-red-400">
           {state.message}{" "}
           <a href={`mailto:${site.email}`} className="underline underline-offset-4">
             {site.email}

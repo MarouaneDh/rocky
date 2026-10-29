@@ -42,7 +42,7 @@ export function Pillars() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0b2641] via-[#0b2641]/70 to-[#0b2641]/20" />
             <Spotlight size={520} />
-            <AmanahLogo tone="reversed" className="relative w-40 md:w-48" />
+            <AmanahLogo className="relative w-40 md:w-48" />
             <ul className="relative my-10 flex max-w-[52ch] flex-wrap gap-2 text-[14px] text-[#eef1f5]/85">
               {advisoryServices.map((s) => (
                 <li key={s.title} className="rounded-full border border-white/15 px-3.5 py-1.5">

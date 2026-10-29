@@ -2,41 +2,23 @@
 
 /*
   Palette taken from the Amanah People Advisory logo: navy #0b2641 + gold #ca9c59.
-  Light: navy carries type and primary actions, gold is the single accent.
-  Dark: deep navy ground, gold takes over primary actions.
-  Gold is only used as a fill or on large type in light mode; small gold text uses --highlight (darker, AA).
+  The site is always dark: deep navy ground, gold carries primary actions, --highlight for small gold text.
   Radius rule: interactive controls are full pills, media and panels are rounded-2xl (16px).
 */
 :root {
-  --bg: #f5f6f8;
-  --surface: #e9edf2;
-  --ink: #0b2641;
-  --muted: #4b5a6c;
-  --line: rgb(11 38 65 / 0.13);
-  --accent: #0b2641;
-  --accent-ink: #f5f6f8;
-  --accent-soft: #e1e7ef;
+  color-scheme: dark;
+  --bg: #071628;
+  --surface: #0e2239;
+  --ink: #eef1f5;
+  --muted: #9fadbd;
+  --line: rgb(238 241 245 / 0.12);
+  --accent: #ca9c59;
+  --accent-ink: #071628;
+  --accent-soft: #10294a;
   --gold: #ca9c59;
-  --on-gold: #0b2641;
-  --highlight: #8a6224;
-  --scrim: #071628;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #071628;
-    --surface: #0e2239;
-    --ink: #eef1f5;
-    --muted: #9fadbd;
-    --line: rgb(238 241 245 / 0.12);
-    --accent: #ca9c59;
-    --accent-ink: #071628;
-    --accent-soft: #10294a;
-    --gold: #ca9c59;
-    --on-gold: #071628;
-    --highlight: #d8b173;
-    --scrim: #040f1d;
-  }
+  --on-gold: #071628;
+  --highlight: #d8b173;
+  --scrim: #040f1d;
 }
 
 @theme inline {
